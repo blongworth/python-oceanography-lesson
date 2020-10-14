@@ -10,8 +10,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Data Carpentry for Oceanographers"
-subtitle: "Using python to accelerate research and increase reproducibility"
+title: "Data Analysis and Visualization in Python for Ecologists"
 
 # Life cycle stage of the lesson
 # possible values: "pre-alpha", "alpha", "beta", "stable"
@@ -33,7 +32,7 @@ repository: <USERNAME>/<PROJECT>
 email: "team@carpentries.org"
 
 # Sites.
-amy_site: "https://amy.carpentries.org/workshops"
+amy_site: "https://amy.carpentries.org/"
 carpentries_github: "https://github.com/carpentries"
 carpentries_pages: "https://carpentries.github.io"
 carpentries_site: "https://carpentries.org/"
@@ -93,6 +92,7 @@ exclude:
   - bin/
   - .Rproj.user/
   - .vendor/
+  - vendor/
   - .docker-vendor/
 
 # Turn on built-in syntax highlighting.
