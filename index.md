@@ -32,11 +32,5 @@ This workshop is based on lessons developed by the Carpentries (See <a href="htt
 {: .prereq}
 
 -->
-> ## For Instructors
-> If you are teaching this lesson in a workshop, please see the
-> [Instructor notes](guide).
-{: .prereq}
-
-{% include links.md %}
 
 
