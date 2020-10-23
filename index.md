@@ -3,9 +3,15 @@ layout: lesson
 root: .
 ---
 <h3 style="text-align: center;"><i>Using python to accelerate research and increase reproducibility</i></h3>
-Python is a general purpose programming language that is useful for writing scripts to work effectively and reproducibly with data.
 
-This is an introduction to Python designed for participants with no programming experience. These lessons can be taught in one and a half days (~ 10 hours). They start with some basic information about Python syntax, the Jupyter notebook interface, and move through how to import CSV files, using the pandas package to work with data frames, how to calculate summary information from a data frame, and a brief introduction to plotting. The last lesson demonstrates how to work with databases directly from Python.
+<h2 id="schedule">Syllabus</h2>
+
+This workshop is based on lessons developed by the Carpentries (See <a href="https://carpentries.org">https://carpentries.org</a>  for more information about the Carpentries organisation.) The lesson order is rearranged below to improve flow and content for the oceanographer audience.
+<ul>
+  <li><a href=" https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a></li>
+  <li><a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization for Ecologists</a></li>
+  <li><a href="https://carpentrieslab.github.io/python-aos-lesson/">Python for atmosphere and ocean scientists</a></li>
+</ul>
 
 > ## Getting Started
 >
