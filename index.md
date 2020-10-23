@@ -6,7 +6,9 @@ root: .
 
 <h2 id="schedule">Syllabus</h2>
 
-This workshop is based on lessons developed by the Carpentries (See <a href="https://carpentries.org">https://carpentries.org</a>  for more information about the Carpentries organisation.) The lesson order is rearranged below to improve flow and content for the oceanographer audience.
+This workshop is based on lessons developed by the Carpentries (See <a href="https://carpentries.org">https://carpentries.org</a>  for more information about the Carpentries organisation.) The lesson order is rearranged below to improve flow and content for the oceanographer audience.  
+
+<strong>The original source lessons used for this Carpentry are:</strong>
 <ul>
   <li><a href=" https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets for Ecologists</a></li>
   <li><a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization for Ecologists</a></li>
