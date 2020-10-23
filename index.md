@@ -12,7 +12,7 @@ This workshop is based on lessons developed by the Carpentries (See <a href="htt
   <li><a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization for Ecologists</a></li>
   <li><a href="https://carpentrieslab.github.io/python-aos-lesson/">Python for atmosphere and ocean scientists</a></li>
 </ul>
-
+<!--
 > ## Getting Started
 >
 > Data Carpentry's teaching is hands-on, so participants are encouraged to use
@@ -29,9 +29,12 @@ This workshop is based on lessons developed by the Carpentries (See <a href="htt
 > everything *before* working through this lesson.
 {: .prereq}
 
+-->
 > ## For Instructors
 > If you are teaching this lesson in a workshop, please see the
 > [Instructor notes](guide).
 {: .prereq}
 
 {% include links.md %}
+
+
