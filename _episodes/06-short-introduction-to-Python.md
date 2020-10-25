@@ -17,6 +17,14 @@ keypoints:
     - "Dictionaries are data structures that provide mappings between keys and values."
 ---
 
+## Let\`s get started
+Open up Jupyter Notebook. In Jupyter, if you put a value on the last line of the cell and run the cell (shift+enter), the value will be pringted below the cell:
+~~~
+3.145
+~~~
+{: .language-python}
+
+
 ## Interpreter
 
 Python is an interpreted language which can be used in two ways:
