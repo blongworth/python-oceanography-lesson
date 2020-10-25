@@ -67,16 +67,24 @@ Hello World
 ~~~
 {: .output}
 
-* "Scripting" Mode: executing a series of "commands" saved in text file,
-  usually with a `.py` extension after the name of your file:
+* "Scripting" Mode: executing a series of "commands" saved in text file, usually with a `.py` extension after the name of your file:
 
 ~~~
-$ python my_script.py
+ %run "counter_example_script.py"
 ~~~
 {: .language-bash}
 
 ~~~
-Hello World
+Hello world
+I count to 5
+0
+1
+2
+3
+4
+5
+my counting is done
+
 ~~~
 {: .output}
 
