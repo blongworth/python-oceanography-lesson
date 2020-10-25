@@ -30,27 +30,24 @@ To run a cell in Jupyter, put a value on the last line of the cell and run the c
 
 Python is an interpreted language which can be used in two ways:
 
-* "Interactively": when you use it as an "advanced calculator" executing
-  one command at a time. To start Python in this mode, execute `python`
-  on the command line:
+* "Interactively": when you use it as an "advanced calculator" executing  one command at a time. 
   
-<!---
-~~~
-$ python
-~~~
-{: .language-python}
+ <!---To start Python in this mode, execute `python`  on the command line: --->
+<!--- ~~~ --->
+<!--- $ python -->
+<!--- ~~~ -->
+<!--- {: .language-python} -->
 
-~~~
-Python 3.5.1 (default, Oct 23 2015, 18:05:06)
-[GCC 4.8.3] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-~~~
-{: .output}
+<!--- ~~~ -->
+<!--- Python 3.5.1 (default, Oct 23 2015, 18:05:06) -->
+<!--- [GCC 4.8.3] on linux2 -->
+<!--- Type "help", "copyright", "credits" or "license" for more information. -->
+<!--- >>> -->
+<!--- ~~~ -->
+<!--- {: .output} -->
 
-Chevrons `>>>` indicate an interactive prompt in Python, meaning that it is waiting for your
-input.
--->
+<!--- Chevrons `>>>` indicate an interactive prompt in Python, meaning that it is waiting for your input. -->
+
 ~~~
 2 + 2
 ~~~
