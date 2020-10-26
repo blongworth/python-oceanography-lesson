@@ -3,16 +3,14 @@ title: "Software installation using conda"
 teaching: 15
 exercises: 15
 questions:
-- "What are the main Python libraries used in atmosphere and ocean science?"
 - "How do I install and manage all the Python libraries that I want to use?"
 - "How do I interact with Python?"
 objectives:
-- "Identify the main Python libraries used in atmosphere and ocean science and the relationships between them."
 - "Explain the advantages of Anaconda over other Python distributions."
 - "Extend the number of packages available via conda using conda-forge."
 - "Create a conda environment with the libraries needed for these lessons."
-- "Open a Jupyter Notebook ready for use in these lessons"
 keypoints:
+- "install plotnine, a required pakcage for our lessons."
 - "xarray and iris are the core Python libraries used in the atmosphere and ocean sciences."
 - "Use conda to install and manage your Python environments."
 ---
@@ -338,7 +336,7 @@ Python 3 notebook:
 >
 {: .callout}
 
-> ## Install the Python libraries required for this lesson
+> ## Install the Python libraries required for week 2
 >
 > Go ahead and install jupyter, xarray, cartopy and cmocean using either the Anaconda Navigator,
 > Bash Shell or Anaconda Prompt (Windows). 
