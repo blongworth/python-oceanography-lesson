@@ -43,8 +43,8 @@ which is the package manager associated with the very popular
 According to the [latest documentation](https://docs.anaconda.com/anaconda/#anaconda-navigator-or-conda),
 Anaconda comes with over 250 of the most widely used data science libraries (and their dependencies) pre-installed.
 In addition, there are several thousand libraries available via the `conda install` command,
-which can be executed using the Bash Shell or Anaconda Prompt (Windows only).
-It is also possible to install packages using the Anaconda Navigator graphical user interface.
+which can be executed using the Bash Shell or Anaconda Prompt (Windows only).  Linux and Mac users can open a Terminal window and execute the bash commands that way.
+It is also possible to install packages using the Anaconda Navigator graphical user interface in the "Environments" section an searching for the packages you want to install.
 
 > ## conda in the shell on windows
 >
