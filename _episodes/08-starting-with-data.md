@@ -379,6 +379,9 @@ Index(['record_id', 'month', 'day', 'year', 'plot_id', 'species_id', 'sex',
 Let's get a list of all the species. The `pd.unique` function tells us all of
 the unique values in the `species_id` column.
 
+Accessing a single column returns a Series (1 dimensional) does not have a column name: my_dataframe['longitude']
+Accessing multiple columns, (2 dimensional) list of columns names + indexing operator (column name): my_dataframe[['date','cruise']]
+
 ~~~
 pd.unique(surveys_df['species_id'])
 ~~~
