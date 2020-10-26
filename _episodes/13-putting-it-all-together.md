@@ -93,6 +93,10 @@ With the new column names:
 ~~~
 {: .output}
 
+## Navigating the vast universe of python vizualization tools
+
+"The [PyViz.org](https://pyviz.org/) website is an open platform for helping users decide on the best open-source (OSS) Python data visualization tools for their purposes, with links, overviews, comparisons, and examples."
+
 ## Matplotlib package
 
 [Matplotlib](https://matplotlib.org/) is a Python package that is widely used throughout the scientific Python community to create high-quality and publication-ready graphics. It supports a wide range of raster and vector graphics formats including PNG, PostScript, EPS, PDF and SVG.
