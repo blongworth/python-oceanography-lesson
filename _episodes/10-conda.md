@@ -19,7 +19,7 @@ keypoints:
 
 ## Python distributions for data science
 
-The [setup instructions for Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/setup.html) statest that we need to install the package called `plotnine`.
+The [setup instructions for Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/setup.html) state that we need to install the package called `plotnine`.
 
 Now that we've identified a Python library we want to use, how do we go about installing it?
 
