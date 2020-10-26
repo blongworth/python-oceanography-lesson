@@ -93,7 +93,9 @@ With the new column names:
 ~~~
 {: .output}
 
-## Navigating the vast universe of python vizualization tools
+## Navigating the vast landscape of python visualization tools
+
+There are some amazing plotting packages out there and a rich ecosystem of tools.  It can be daunting to pick one for your purpose. pyviz.org is one resource that aims to help you figure out what to use.
 
 "The [PyViz.org](https://pyviz.org/) website is an open platform for helping users decide on the best open-source (OSS) Python data visualization tools for their purposes, with links, overviews, comparisons, and examples."
 
