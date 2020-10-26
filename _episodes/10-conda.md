@@ -80,6 +80,11 @@ OR using Anaconda Navigator:
 
 Let's try installing our required package `plotnine` together.  Open up an Anaconda Prompt (or Terminal if on Mac) and follow along.
 
+Note that whenever lessons have a "Bash" section like the one shown below it means use an Anaconda Prompt (windows) or Terminal (Mac or Linux).
+~~~
+$ conda install plotnine
+~~~
+{: .language-bash}
 
 ## Advanced conda
 
