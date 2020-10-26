@@ -17,7 +17,7 @@ keypoints:
 - "Use conda to install and manage your Python environments."
 ---
 
-## Python distributions for data science
+## Methods for installing packages
 
 The [setup instructions for Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/setup.html) state that we need to install the package called `plotnine`.
 
