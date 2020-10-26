@@ -17,29 +17,11 @@ keypoints:
 - "Use conda to install and manage your Python environments."
 ---
 
-## The PyAOS stack
-
-Before we jump in and start analysing our netCDF precipitation data files,
-we need to consider what Python libraries are best suited to the task. 
-
-For reading, writing and analysing data stored in the netCDF file format,
-atmosphere and ocean scientists will typically do most of their work with either the
-[xarray](http://xarray.pydata.org/en/stable/) or [iris](http://scitools.org.uk/iris/) libraries.
-These libraries are built on top of more generic data science libraries like numpy and matplotlib,
-to make the types of analysis we do faster and more efficient.
-To learn more about the PyAOS "stack" shown in the diagram below
-(i.e. the collection of libraries that are typically used for
-data analysis and visualisation in the atmosphere and ocean sciences),
-check out the [overview of the PyAOS stack](https://pyaos.github.io/stack/)
-at the PyAOS community site.
-
-![PyAOS stack](../fig/01-pyaos-stack.svg) 
-
-
 ## Python distributions for data science
 
-Now that we've identified the Python libraries we might want to use,
-how do we go about installing them?
+The [setup instructions for Python for Ecologists](https://datacarpentry.org/python-ecology-lesson/setup.html) statest that we need to install the package called `plotnine`.
+
+Now that we've identified a Python library we want to use, how do we go about installing it?
 
 Our first impulse might be to use the Python package installer (pip), 
 but until recently pip only worked for libraries written in pure Python.
@@ -53,6 +35,8 @@ additional libraries that weren’t pre-installed.
 This tutorial focuses on [conda](https://conda.io/docs/),
 which is the package manager associated with the very popular 
 [Anaconda](https://www.anaconda.com/distribution/) distribution.
+
+
 
 ## Introducing conda
 
@@ -91,6 +75,10 @@ OR using Anaconda Navigator:
 > It essentially comes with conda and nothing else.
 >
 {: .callout}
+
+## Live demo
+
+Let's try installing our required package `plotnine` together.  Open up an Anaconda Prompt (or Terminal if on Mac) and follow along.
 
 
 ## Advanced conda
