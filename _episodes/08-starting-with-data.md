@@ -135,6 +135,8 @@ We can use Pandas' `read_csv` function to pull the file directly into a [DataFra
 
 ## So What's a DataFrame?
 
+Pandas provides an object called DataFrame. Dataframes represent tabular data. They are a 2-dimensional data structure. They include columns, each of which is a Series with a name, and all columns share the same index (An index refers to the position of an element in the data structure.). We import a csv table into a data frame using the read_csv function.
+
 A DataFrame is a 2-dimensional data structure that can store data of different
 types (including characters, integers, floating point values, factors and more)
 in columns. It is similar to a spreadsheet or an SQL table or the `data.frame` in
