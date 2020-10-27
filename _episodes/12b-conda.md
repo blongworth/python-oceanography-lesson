@@ -119,27 +119,28 @@ We recommend not adding any other third-party channels unless absolutely necessa
 because mixing packages from multiple channels can cause headaches like binary incompatibilities.
 
 
-## Software installation for these lessons
+## Software installation for the lessons
 
-For these particular lessons we will use xarray,
-but all the same tasks could be performed with iris.
-We'll also install
+[xarray](http://xarray.pydata.org/en/stable/)
 [netCDF4](http://unidata.github.io/netcdf4-python/) (xarray requires this to read netCDF files),
 [cartopy](http://scitools.org.uk/cartopy/) (to help with geographic plot projections),
 [cmocean](http://matplotlib.org/cmocean/) (for nice color palettes),
 [cmdline_provenance](https://cmdline-provenance.readthedocs.io/en/latest/)
 (to keep track of our data processing steps)
 and [jupyter](https://jupyter.org/) (so we can use the jupyter notebook).  
+[plotnine](https://plotnine.readthedocs.io/en/stable/)
 
 We could install these libraries from Anaconda Navigator (not shown)
-or using the Bash Shell or Anaconda Prompt (Windows):
+or using the Terminal in Mac/Linux or Anaconda Prompt (Windows):
 ~~~
-$ conda install jupyter xarray netCDF4 cartopy cmocean cmdline_provenance
+$ conda install jupyter xarray netCDF4 cartopy
+
+$ conda install -c conda-forge cmocean cmdline_provenance plotnine
 ~~~
 {: .language-bash}
 
 If we then list all the libraries that we've got installed,
-we can see that jupyter, xarray, netCDF4, cartopy, cmocean, cmdline_provenance
+we can see that jupyter, xarray, netCDF4, cartopy, cmocean, cmdline_provenance, plotnine
 and their dependencies are now there:
 ~~~
 $ conda list
