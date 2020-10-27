@@ -80,7 +80,7 @@ Let's try installing our required package `plotnine` together.  Open up an Anaco
 
 Note that whenever lessons have a "Bash" section like the one shown below it means use an Anaconda Prompt (windows) or Terminal (Mac or Linux).
 ~~~
-$ conda install plotnine
+$ conda install -y -c conda-forge plotnine
 ~~~
 {: .language-bash}
 
