@@ -3,11 +3,13 @@
 ## Takeaways on lessons uptil now
 
 ### Spreadsheets
-### Pandas
-Important features in pandas: subsetting dataframes
+### Python & Pandas
+Working with tabular datafile in python, best package for that is pandas. 
+Important features in pandas: subsetting dataframes , grouping , combining dataframes
 ### Plotting
 Matplotlib and Plotnine
 
+Useful resources: Matplotlib gallery: https://matplotlib.org/gallery.html
 
 
 
