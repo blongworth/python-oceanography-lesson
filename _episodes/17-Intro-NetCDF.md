@@ -17,7 +17,7 @@ keypoints:
 ---
 
 ## What is NetCDF?
-These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmosphere and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files.   
+These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmosphere and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files. Satellite data is also often provided in NetCDF format.    
   
 Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).  
   
@@ -35,7 +35,7 @@ An example of a **2-dimensional array** is temperature over an area for a given 
   
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)  
   
-**Three-dimensional (3D) data**, like temperature over an area varying with time.  
+**Three-dimensional (3D) data**, like temperature over an area varying with time. Think of this as a Pandas DataFrame where the "columns" (variables) have more than one dimension.  
 ![3D](../fig/netcdf_3D.gif)  
   
 **Four-dimensional (4D) data**, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
@@ -76,6 +76,7 @@ Setting up a Notebook and loading NetCDF data using Python libraries is not the 
 ### Command Line Interfaces
 * Ncdump: Ncdump is the netCDF file reader that is bundled with Unidata's netCDF product. To obtain it, visit the UCAR Unidata Web site.
 * NetCDF Operators (NCO): The NCO are a suite of programs known as operators in which each operator is a standalone, command line program which is executed at the UNIX command prompt. To learn more and to download the operators, visit the NCO Hompage.  
+* Climate data operatores (CDO - https://code.mpimet.mpg.de/projects/cdo), also a collection of command-line operators to manipulate and analyze NetCDf data. It is not as popular as NCO, but still used. 
 
 ### GUI Interfaces
 * Ncview: Ncview is a netCDF visual browser that allows the user to visually inspect NetCDF data files. To download ncview, visit David Pierce's Ncview Web page.
