@@ -1,12 +1,13 @@
 ---
 title: Introduction to netCDF
-teaching: 15 min
-exercises: 0 min
+teaching: 15 
+exercises: 0 
 questions:
     - "What is NetCDF format?"
     - "Why using Xarray for NetCDF files in Python "
 objectives:
-    - "Describe how information is stored in a Python DataFrame."
+    - "Undertanding how NetCDF is stored." 
+    - "Describe the components of a NetCDF file."
     - "Define the two main types of data in Python: text and numerics."
     - "Examine the structure of a DataFrame."
     - "Modify the format of values in a DataFrame."
@@ -16,6 +17,7 @@ objectives:
     - "Write manipulated data to a file."
 keypoints:
     - "NetCDF is a format to store gridded data and widely use in climate science."
+    - "A netCDF file contains dimensions, variables, and attributes."
     - "Xarray is a library to work with NetCDF data in Python."
     - "CMIP data is used in climate modelling."
 
