@@ -22,7 +22,7 @@ These lessons work with raster or “gridded” data that are stored as a unifor
 Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).  
   
 ### Advantages
-* One of the major advantages is that it is self describing  
+* One of the major advantages is that it is self describing, i.e. the metadata is stored within the file.  
 * It is a binary format, which are more efficient. In terms of memory, storing values using numeric formats such as IEEE 754, rather than as text characters, tends to use less memory. In addition, binary formats also offer advantages in terms of speed of access. Easy to use, compact, machine independent.  
   
   
@@ -31,7 +31,7 @@ The data in a netCDF file is **stored in the form of arrays**. The data stored i
   
 Temperature varying over time at a location is stored as a **one-dimensional array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).    
   
-An example of a **2-dimensional array** is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional datastructe, but it differs from an array, a dataframe can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).  
+An example of a **2-dimensional array** is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional data structure, but it differs from an array: a DataFrame can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).  
   
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)  
   
@@ -51,12 +51,14 @@ A netCDF file contains **dimensions, variables, and attributes**. These componen
 A NetCDF dimension is a named integer used to **specify the shape** of one or more of the multi-dimensional variables contained in a netCDF file. A dimension may be used to represent a real physical dimension, for example, time, latitude, longitude, or height; or more abstract quantities like station or model-run ID.  
   
 Every NetCDF dimension has **both a name and a size**.  
-* A dimension name is an arbitrary sequence of alphanumeric characters (as well as the underscore character, `_', and the hyphen character, `-') beginning with a letter. Case is distinguished in netCDF names. 
+* A dimension name is an arbitrary sequence of alphanumeric characters (as well as the underscore character, `_',` and the hyphen character, `-' `) beginning with a letter. Case is distinguished in netCDF names. 
 * A dimension size is an arbitrary positive integer, except that one dimension in a netCDF file can have the size UNLIMITED. Such a dimension is called the unlimited dimension or the record dimension. A variable with an unlimited dimension can grow to any length along that dimension.     
 
 
 ### Variables
-A variable represents an array of values of the same type. Variables are used to store the bulk of the data in a netCDF file. A variable has a name, data type, and shape described by its list of dimensions specified when the variable is created. The number of dimensions is the rank (also known as dimensionality). A scalar variable has a rank of 0, a vector has a rank of 1, and a matrix has a rank of 2. A variable can also have associated attributes that can be added, deleted, or changed after the variable is created.
+A variable represents an **array of values of the same type**. Variables are used to store the bulk of the data in a netCDF file. 
+A variable has a **name, data type, and shape** described by its list of dimensions specified when the variable is created. The number of dimensions is the rank (also known as dimensionality). A scalar variable has a rank of 0, a vector has a rank of 1, and a matrix has a rank of 2. 
+A variable can also have associated attributes that can be added, deleted, or changed after the variable is created.
 
 ### Coordinate variables
 A one-dimensional variable with the same name as a dimension is a coordinate variable. It is associated with a dimension of one or more data variables and typically defines a physical coordinate corresponding to that dimension.
