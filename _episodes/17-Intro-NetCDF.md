@@ -27,30 +27,30 @@ Network Common Data Form (NetCDF) files are in binary format that are platform i
   
   
 ## Storage of NetCDF data
-The data in a netCDF file is stored in the form of arrays. The data stored in an array needs to be of the same type (homogeneous). 
+The data in a netCDF file is **stored in the form of arrays**. The data stored in an array needs to be of the same type (homogeneous). 
   
-Temperature varying over time at a location is stored as a one-dimensional **array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).    
+Temperature varying over time at a location is stored as a **one-dimensional array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).    
   
-An example of a 2-dimensional array is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional datastructe, but it differs from an array, a dataframe can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).  
+An example of a **2-dimensional array** is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional datastructe, but it differs from an array, a dataframe can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).  
   
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)  
   
-Three-dimensional (3D) data, like temperature over an area varying with time.  
+**Three-dimensional (3D) data**, like temperature over an area varying with time.  
 ![3D](../fig/netcdf_3D.gif)  
   
-Four-dimensional (4D) data, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
+**Four-dimensional (4D) data**, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
 ![3D](../fig/netcdf_4D.gif)  
   
 ## Basic components of a NetCDF file
-A netCDF file contains **dimensions, variables, and attributes**. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a netCDF file.  
+A netCDF file contains **dimensions, variables, and attributes**. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a NetCDF file.  
   
 ![netcdf](../fig/netcdf.png)  
   
   
 ### Dimensions
-A netCDF dimension is a named integer used to **specify the shape** of one or more of the multi-dimensional variables contained in a netCDF file. A dimension may be used to represent a real physical dimension, for example, time, latitude, longitude, or height; or more abstract quantities like station or model-run ID.  
+A NetCDF dimension is a named integer used to **specify the shape** of one or more of the multi-dimensional variables contained in a netCDF file. A dimension may be used to represent a real physical dimension, for example, time, latitude, longitude, or height; or more abstract quantities like station or model-run ID.  
   
-Every netCDF dimension has **both a name and a size**.  
+Every NetCDF dimension has **both a name and a size**.  
 * A dimension name is an arbitrary sequence of alphanumeric characters (as well as the underscore character, `_', and the hyphen character, `-') beginning with a letter. Case is distinguished in netCDF names. 
 * A dimension size is an arbitrary positive integer, except that one dimension in a netCDF file can have the size UNLIMITED. Such a dimension is called the unlimited dimension or the record dimension. A variable with an unlimited dimension can grow to any length along that dimension.     
 
