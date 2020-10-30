@@ -8,13 +8,6 @@ questions:
 objectives:
     - "Undertanding how NetCDF is stored." 
     - "Describe the components of a NetCDF file."
-    - "Define the two main types of data in Python: text and numerics."
-    - "Examine the structure of a DataFrame."
-    - "Modify the format of values in a DataFrame."
-    - "Describe how data types impact operations."
-    - "Define, manipulate, and interconvert integers and floats in Python."
-    - "Analyze datasets having missing/null values (NaN values)."
-    - "Write manipulated data to a file."
 keypoints:
     - "NetCDF is a format to store gridded data and widely use in climate science."
     - "A netCDF file contains dimensions, variables, and attributes."
