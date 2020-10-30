@@ -104,7 +104,6 @@ There are 2 main libraries that are being used in Python to work with NetCDF dat
 The  cartopy library is the package used to plot our data, it is designed for geospatial data processing in order to produce maps and other geospatial data analyses. 
   
     
-      
 #### Sources: 
 CMIP5 Database: https://esgf-node.llnl.gov/projects/cmip5/  
 CMIP5 datastructure: https://portal.enes.org/data/enes-model-data/cmip5/datastructure  
