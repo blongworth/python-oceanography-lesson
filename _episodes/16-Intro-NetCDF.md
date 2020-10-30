@@ -26,6 +26,8 @@ keypoints:
 ## Gridded data
 These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmosphere and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files.
 
+Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).
+
 ## Advantages
 
 
@@ -77,3 +79,10 @@ Ivan slices and subsets is datasets before loading it into xarray.
 
 # CMIP data
 This is the dataset that we will be using for our class and is very known and widely used by oceanographers
+
+CMIP provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
+
+The acronym GCM originally stood for General Circulation Model. Recently, a second meaning came into use, namely Global Climate Model. While these do not refer to the same thing, General Circulation Models are typically the tools used for modelling climate, and hence the two terms are sometimes used interchangeably. However, the term "global climate model" is ambiguous and may refer to an integrated framework that incorporates multiple components including a general circulation model, or may refer to the general class of climate models that use a variety of means to represent the climate mathematically. 
+
+Sources: https://esgf-node.llnl.gov/projects/cmip5/
+
