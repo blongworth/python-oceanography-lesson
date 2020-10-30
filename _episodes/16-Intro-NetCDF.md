@@ -32,19 +32,19 @@ Network Common Data Form (NetCDF) files are in binary format that are platform i
 
 
 # Storage of netCDF data
-The data in a netCDF file is stored in the form of arrays. For example, temperature varying over time at a location is stored as a one-dimensional array. Temperature over an area for a given time is stored as a two-dimensional array.
+The data in a netCDF file is stored in the form of arrays. For example, temperature varying over time at a location is stored as a one-dimensional array. Temperature over an area for a given time is stored as a two-dimensional array.  
 
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)
 
 
-Three-dimensional (3D) data, like temperature over an area varying with time.
+Three-dimensional (3D) data, like temperature over an area varying with time.  
 ![3D](../fig/netcdf_3D.gif)
 
-Four-dimensional (4D) data, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.
+Four-dimensional (4D) data, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
 ![3D](../fig/netcdf_4D.gif)
 
 # Basic components of a netCDF file
-A netCDF file contains dimensions, variables, and attributes. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a netCDF file.
+A netCDF file contains dimensions, variables, and attributes. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a netCDF file.  
 
 ![netcdf](../fig/netcdf.png)
 
