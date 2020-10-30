@@ -26,7 +26,7 @@ Network Common Data Form (NetCDF) files are in binary format that are platform i
 * It is a binary format, which are more efficient. In terms of memory, storing values using numeric formats such as IEEE 754, rather than as text characters, tends to use less memory. In addition, binary formats also offer advantages in terms of speed of access. Easy to use, compact, machine independent.  
   
   
-## Storage of netCDF data
+## Storage of NetCDF data
 The data in a netCDF file is stored in the form of arrays. The data stored in an array needs to be of the same type (homogeneous). 
   
 Temperature varying over time at a location is stored as a one-dimensional **array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).    
@@ -41,7 +41,7 @@ Three-dimensional (3D) data, like temperature over an area varying with time.
 Four-dimensional (4D) data, like temperature over an area varying with time and altitude, is stored as a series of two-dimensional arrays.  
 ![3D](../fig/netcdf_4D.gif)  
   
-## Basic components of a netCDF file
+## Basic components of a NetCDF file
 A netCDF file contains **dimensions, variables, and attributes**. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a netCDF file.  
   
 ![netcdf](../fig/netcdf.png)  
@@ -99,7 +99,9 @@ The acronym GCM originally stood for General Circulation Model. Recently, a seco
 There are 2 main libraries that are being used in Python to work with NetCDF data: **xarray and iris**. In this course we will use xarray, this library took the pandas concept and extended it to gridded data. Working with this package in Python is similar to the concepts and ideas as the Pandas library for tabular data. The Iris library has a more unique syntax. 
 
 The  cartopy library is the package used to plot our data, it is designed for geospatial data processing in order to produce maps and other geospatial data analyses. 
-
+  
+    
+      
 #### Sources: 
 CMIP5 Database: https://esgf-node.llnl.gov/projects/cmip5/  
 CMIP5 datastructure: https://portal.enes.org/data/enes-model-data/cmip5/datastructure  
