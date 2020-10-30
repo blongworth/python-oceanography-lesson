@@ -78,6 +78,8 @@ Ivan recommende keeping a small part of vectorisatio in there (like multiplicati
 Ivan slices and subsets is datasets before loading it into xarray. 
 
 # CMIP data
+
+gridded data - monthly time interval
 This is the dataset that we will be using for our class and is very known and widely used by oceanographers
 
 CMIP provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
@@ -85,4 +87,8 @@ CMIP provides a community-based infrastructure in support of climate model diagn
 The acronym GCM originally stood for General Circulation Model. Recently, a second meaning came into use, namely Global Climate Model. While these do not refer to the same thing, General Circulation Models are typically the tools used for modelling climate, and hence the two terms are sometimes used interchangeably. However, the term "global climate model" is ambiguous and may refer to an integrated framework that incorporates multiple components including a general circulation model, or may refer to the general class of climate models that use a variety of means to represent the climate mathematically. 
 
 Sources: https://esgf-node.llnl.gov/projects/cmip5/
+CMIP5 datastructure: https://portal.enes.org/data/enes-model-data/cmip5/datastructure
+tools: https://nsidc.org/data/netcdf/tools.html
+Explanation file name: https://scienceofdoom.com/2020/05/16/extracting-rainfall-data-from-cmip5-models/
 
+(Coupled Model Intercomparison Project phase 5
