@@ -89,8 +89,7 @@ Setting up a Notebook and loading NetCDF data using Python libraries is not the 
 
 ## CMIP data
 
-IS regular, linear grid. gridded data - monthly time interval
-This is the dataset that we will be using for our class and is very known and widely used by oceanographers
+This is the dataset that we will be using for our class and is very known and widely used by oceanographers. The dataset  is regular, linear, gridded data. It represent the mean monthly prescipitation flux (kg m-2 s-1) on a global scale. 
 
 CMIP (Coupled Model Intercomparison Projec) provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
 
@@ -100,7 +99,7 @@ The acronym GCM originally stood for General Circulation Model. Recently, a seco
 
 ## Python Libraries
 There are 2 main libraries that are being used in Python to work with NetCDF data: **xarray and iris**. In this course we will use xarray, this library took the pandas concept and extended it to gridded data. Working with this package in Python is similar to the concepts and ideas as the Pandas library for tabular data. The Iris library has a more unique syntax. 
-
+  
 The  cartopy library is the package used to plot our data, it is designed for geospatial data processing in order to produce maps and other geospatial data analyses. 
   
     
