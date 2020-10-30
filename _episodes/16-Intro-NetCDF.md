@@ -32,7 +32,11 @@ Network Common Data Form (NetCDF) files are in binary format that are platform i
 
 
 # Storage of netCDF data
-The data in a netCDF file is stored in the form of arrays. For example, temperature varying over time at a location is stored as a one-dimensional array. Temperature over an area for a given time is stored as a two-dimensional array.  
+The data in a netCDF file is stored in the form of arrays. The data stored in an array needs to be of the same type (homogeneous). 
+
+Temperature varying over time at a location is stored as a one-dimensional **array**. You can think of it as a list containing elements of the same data type (i.e. integers, floats).  
+
+An example of a 2-dimensional array is temperature over an area for a given time. A Pandas DataFrame is also a 2-dimensional datastructe, but it differs from an array, a dataframe can store hetergenous data elements, and you can access it as a spreadsheet (using the columnnames and rows).
 
 ![1D_2D](../fig/netcdf_1D_2D_array.PNG)
 
