@@ -29,8 +29,8 @@ These lessons work with raster or “gridded” data that are stored as a unifor
 Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).
 
 ## Advantages
-
-
+* One of the major advantages is that it is self describing
+* It is a binary format, which are more efficient. In terms of memory, storing values using numeric formats such as IEEE 754, rather than as text characters, tends to use less memory. In addition, binary formats also offer advantages in terms of speed of access. Easy to use, compact, machine independent.
 
 
 # Storage of netCDF data
@@ -43,7 +43,6 @@ Three-dimensional (3D) data, like temperature over an area varying with time, or
 A netCDF file contains dimensions, variables, and attributes. These components are used together to capture the meaning of data and relations among data fields in an array-oriented dataset. The following figure shows the structure of a netCDF file using the CDL (network Common Data form Language) notation. CDL is the ASCII format used to describe the content of a netCDF file.
 
 ## Dimensions
-
 A netCDF dimension has both a name and a size. A dimension size is an arbitrary positive integer. Only one dimension in a netCDF file can have the size UNLIMITED. Such a dimension is the unlimited dimension or record dimension. A variable with an unlimited dimension can grow to any length along that dimension.
 
 A dimension can be used to represent a real physical dimension, for example, time, latitude, longitude, or height. A dimension can also be used to index other quantities, for example, station or model run number. It is possible to use the same dimension more than once in specifying a variable shape.
@@ -66,29 +65,38 @@ Attributes that provide information about the entire netCDF file are global attr
 
 
 
-
-
 # What tools to use NetCDF with
-Python: two packages mainly used are xarray and iris. The following lessons are using xarray which has a syntax very comaparable to pandas, so same principles can be used.
+Setting up a Notebook and loading NetCDF data using Python libraries is not the only way of accessing these data. Other tools are:
 
-Can use ncdump to look at the metadata without opening a notebook (
+## Command Line Interfaces
+* Ncdump: Ncdump is the netCDF file reader that is bundled with Unidata's netCDF product. To obtain it, visit the UCAR Unidata Web site.
+* NetCDF Operators (NCO): The NCO are a suite of programs known as operators in which each operator is a standalone, command line program which is executed at the UNIX command prompt. To learn more and to download the operators, visit the NCO Hompage.
+## GUI Interfaces
+* Ncview: Ncview is a netCDF visual browser that allows the user to visually inspect NetCDF data files. To download ncview, visit David Pierce's Ncview Web page.
+* IDL NetCDF Reader: For users who are familiar with IDL, David Fanning has created a netCDF browser in IDL: ncdf_browser.pro. To download this procedure, visit the NCDF Browser section of David Fanning's Web site.
+* Panoply: Panoply is a JAVA application developed by NASA for viewing netCDF files. For more information and to download a copy, visit NASA's Panoply netCDF Viewer Web page.
+* NcBrowse: NcBrowse is a Java application that offers flexible, interactive graphical displays of data and its attributes from a wide range of netCDF data file conventions. For more information and to download a copy, visit NcBrowse: A Graphical NetCDF File Browser Web site
 
-Ivan recommende keeping a small part of vectorisatio in there (like multiplication or addition) to touch on the strength of xarray, a for loop would blow up your computer.
-
-Ivan slices and subsets is datasets before loading it into xarray. 
 
 # CMIP data
 
-gridded data - monthly time interval
+IS regular, linear grid. gridded data - monthly time interval
 This is the dataset that we will be using for our class and is very known and widely used by oceanographers
 
-CMIP provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
+CMIP (Coupled Model Intercomparison Projec) provides a community-based infrastructure in support of climate model diagnosis, validation, intercomparison, documentation and data access. This framework enables a diverse community of scientists to analyze GCMs in a systematic fashion, a process which serves to facilitate model improvement.
 
 The acronym GCM originally stood for General Circulation Model. Recently, a second meaning came into use, namely Global Climate Model. While these do not refer to the same thing, General Circulation Models are typically the tools used for modelling climate, and hence the two terms are sometimes used interchangeably. However, the term "global climate model" is ambiguous and may refer to an integrated framework that incorporates multiple components including a general circulation model, or may refer to the general class of climate models that use a variety of means to represent the climate mathematically. 
+
+
+
+# Python Libraries
+There are 2 main libraries that are being used in Python to work with NetCDF data: xarray and iris. In this course we will use xarray, this library took the pandas concept and extended it to gridded data. <aking working with it very similar. The Iris library has a more unique syntax. 
+
+The library cartopy is the plotter
 
 Sources: https://esgf-node.llnl.gov/projects/cmip5/
 CMIP5 datastructure: https://portal.enes.org/data/enes-model-data/cmip5/datastructure
 tools: https://nsidc.org/data/netcdf/tools.html
 Explanation file name: https://scienceofdoom.com/2020/05/16/extracting-rainfall-data-from-cmip5-models/
 
-(Coupled Model Intercomparison Project phase 5
+Ivan recommende keeping a small part of vectorisatio in there (like multiplication or addition) to touch on the strength of xarray, a for loop would blow up your computer.
