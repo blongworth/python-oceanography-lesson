@@ -1,4 +1,10 @@
-# This is the start of the refresher of day 3 it will include:
+---
+title: Refresher
+teaching: 30
+exercises: 0 
+
+---
+
 
 ## Takeaways on lessons uptil now
 
