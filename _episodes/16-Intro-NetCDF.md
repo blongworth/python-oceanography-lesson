@@ -1,10 +1,10 @@
 ---
 title: Introduction to netCDF
-teaching: 
-exercises: 
+teaching: 15 min
+exercises: 0 min
 questions:
-    - "What types of data can be contained in a DataFrame?"
-    - "Why is the data type important?"
+    - "What is NetCDF format?"
+    - "Why using Xarray for NetCDF files in Python "
 objectives:
     - "Describe how information is stored in a Python DataFrame."
     - "Define the two main types of data in Python: text and numerics."
@@ -15,15 +15,13 @@ objectives:
     - "Analyze datasets having missing/null values (NaN values)."
     - "Write manipulated data to a file."
 keypoints:
-    - "Pandas uses other names for data types than Python, for example: `object` for textual data."
-    - "A column in a DataFrame can only have one data type."
-    - "The data type in a DataFrame’s single column can be checked using `dtype`."
-    - "Make conscious decisions about how to manage missing data."
-    - "A DataFrame can be saved to a CSV file using the `to_csv` function."
+    - "NetCDF is a format to store gridded data and widely use in climate science."
+    - "Xarray is a library to work with NetCDF data in Python."
+    - "CMIP data is used in climate modelling."
+
 ---
 
 # What is NetCDF?
-## Gridded data
 These lessons work with raster or “gridded” data that are stored as a uniform grid of values using the netCDF file format. This is the most common data format and file type in the atmosphere and ocean sciences; essentially all output from weather, climate and ocean models is gridded data stored as a series of netCDF files.
 
 Network Common Data Form (NetCDF) files are in binary format that are platform independent and self-describing (files contain a header and file metadata in the form of name/value attributes). This file format was developed by the Unidata project at the University Corporation for Atmospheric Research (UCAR).
